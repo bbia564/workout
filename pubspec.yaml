@@ -69,12 +69,12 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter_launcher_icons:
-  image_path: "assets/345.png"
+  image_path: "assets/images/don.png"
   android: true
   ios: true
   web:
     generate: true
-    image_path: "assets/345.png"
+    image_path: "assets/images/don.png"
     background_color: "#FFFFFF"
     theme_color: "#FFFFFF"
 
