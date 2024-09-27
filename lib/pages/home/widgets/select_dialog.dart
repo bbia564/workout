@@ -33,7 +33,7 @@ class SelectDialog extends StatelessWidget {
                 selectAction.call(2);
               },
               title: Text(
-                "Record Input",
+                "Record Investment",
                 textAlign: TextAlign.center,
                 style: TextStyle(
                     fontWeight: FontWeight.w500, fontSize: 14.sp, color: const Color(0xFF4B8CF5)),
