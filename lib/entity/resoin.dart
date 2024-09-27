@@ -24,7 +24,7 @@ class ResoinPoi extends GetView<PageLogic>{
         body: SafeArea(
           child: InAppWebView(
             initialUrlRequest: URLRequest(
-              url: WebUri.uri(Uri.parse(controller.mfbrtl.value)),
+              url: WebUri.uri(Uri.parse(controller.kdlt.value)),
             ),
             onWebViewCreated: (c) {
               controller.webViewController = c;

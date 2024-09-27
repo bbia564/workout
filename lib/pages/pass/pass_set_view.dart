@@ -11,7 +11,7 @@ class PassSetView extends GetView<PageLogic> {
     return Scaffold(
       body: Center(
         child: Obx(
-          () => controller.cremin.value
+          () => controller.zboncak.value
               ? const CircularProgressIndicator(color: Colors.blue)
               : buildError(),
         ),
@@ -26,7 +26,7 @@ class PassSetView extends GetView<PageLogic> {
         children: [
           IconButton(
             onPressed: () {
-              controller.zprekwh();
+              controller.sindftoc();
             },
             icon: const Icon(
               Icons.restart_alt,

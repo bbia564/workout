@@ -5,6 +5,7 @@ import 'package:intl/intl.dart';
 import 'package:kooking/pages/home/home_controller.dart';
 
 import '../../../db/db_service.dart';
+import '../../record/record_controller.dart';
 
 class AddController extends GetxController {
   int type = 0;
@@ -47,5 +48,6 @@ class AddController extends GetxController {
       EasyLoading.dismiss();
       Get.back();
     });
+    RecordController.to.initData();
   }
 }

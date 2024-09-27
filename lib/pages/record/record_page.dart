@@ -6,10 +6,12 @@ import 'package:kooking/res/style.dart';
 
 import '../../entity/exercise_bean.dart';
 
+
 class RecordPage extends GetView<RecordController> {
   const RecordPage({super.key});
 
   @override
+
   Widget build(BuildContext context) {
     return Stack(
       children: [

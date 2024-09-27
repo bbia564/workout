@@ -39,6 +39,26 @@ class SettingPage extends GetView<SetController> {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     ListTile(
+                      title: Text("Investment Record",
+                          style: TextStyle(
+                              fontWeight: FontWeight.w600,
+                              fontSize: 14.sp)),
+                      contentPadding: const EdgeInsets.only(left: 16, right: 10),
+                      trailing: const Icon(
+                        Icons.arrow_forward_ios,
+                        color: Color(0xFFAAAAAA),
+                        size: 16,
+                      ),
+                      onTap: () {
+                        controller.onRecord();
+                      },
+                    ),
+                    const Divider(
+                      height: 1,
+                      indent: 17,
+                      endIndent: 17,
+                    ),
+                    ListTile(
                       title: Text("Clean Data",
                           style: TextStyle(
                               fontWeight: FontWeight.w600,
@@ -52,11 +72,6 @@ class SettingPage extends GetView<SetController> {
                       onTap: () {
                         controller.onCleanData();
                       },
-                    ),
-                    const Divider(
-                      height: 1,
-                      indent: 17,
-                      endIndent: 17,
                     ),
                     const Divider(
                       height: 1,

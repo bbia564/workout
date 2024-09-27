@@ -95,7 +95,7 @@ List<GetPage<dynamic>> Looks = [
         },
       )),
   GetPage(
-      name: '/record',
+      name: '/crecord',
       page: () => const ConsumptionRecordPage(),
       binding: BindingsBuilder(
             () {

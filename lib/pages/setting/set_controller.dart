@@ -26,7 +26,7 @@ class SetController extends GetxController {
 
   final db = Get.find<DatabaseService>();
   onRecord(){
-    Get.toNamed('/record');
+    Get.toNamed('/crecord');
   }
   onPrivacy(BuildContext context) async {
     showCupertinoModalPopup(
