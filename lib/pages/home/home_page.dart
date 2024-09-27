@@ -41,6 +41,9 @@ class HomePage extends GetView<HomeController> {
                   Expanded(
                       child: Obx(() => _statisticsItem(
                           "Total duration", "${controller.durationTotal.value} H"))),
+                  Expanded(
+                      child: Obx(() => _statisticsItem(
+                          "Total investment", "${controller.consumptionTotal.value}"))),
                   SizedBox(
                     height: 51.5.h,
                     child: VerticalDivider(width: 0, color: Colors.white.withOpacity(0.17)),
@@ -72,7 +75,7 @@ class HomePage extends GetView<HomeController> {
                       gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
                         crossAxisSpacing: 8,
                         mainAxisSpacing: 12,
-                        childAspectRatio: 168 / 130,
+                        childAspectRatio: 140 / 130,
                         maxCrossAxisExtent:200,
                       ),
                       itemCount: controller.projects.length,
@@ -122,6 +125,12 @@ class HomePage extends GetView<HomeController> {
               item["name"]?.toUpperCase() ?? "",
               style:
                   TextStyle(fontWeight: FontWeight.w700, fontSize: 14.sp, color: const Color(0xFF0F0F0F)),
+            ),
+            6.verticalSpace,
+            Text(
+              "Investment:" + item["price"]!,
+              style:
+              TextStyle(fontWeight: FontWeight.w700, fontSize: 12.sp, color: Colors.grey),
             ),
           ],
         ),

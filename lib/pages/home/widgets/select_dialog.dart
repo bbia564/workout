@@ -28,6 +28,17 @@ class SelectDialog extends StatelessWidget {
                     fontWeight: FontWeight.w500, fontSize: 14.sp, color: const Color(0xFF4B8CF5)),
               ),
             ),
+            ListTile(
+              onTap: () {
+                selectAction.call(2);
+              },
+              title: Text(
+                "Record Input",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                    fontWeight: FontWeight.w500, fontSize: 14.sp, color: const Color(0xFF4B8CF5)),
+              ),
+            ),
             const Divider(
               indent: 16,
               endIndent: 16,
